@@ -6,14 +6,17 @@ import 'router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Default entry point fallback (e.g. if run without flavor specific main)
+  // But ideally we should always use main_dev or main_prd
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: MyApp(flavor: 'dev')));
 }
 
 class MyApp extends ConsumerWidget {
-  const MyApp({super.key});
+  final String flavor;
+  const MyApp({super.key, required this.flavor});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

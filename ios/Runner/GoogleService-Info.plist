@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBFaXIecdbmI-oPU8qJMVzkDPjNIlZPpR0</string>
+	<string>AIzaSyCMiy_Mb_CGrcceq87-D4FijZipSB5H8YE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>680896848616</string>
+	<string>37294812499</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.penguinTimer</string>
 	<key>PROJECT_ID</key>
-	<string>penguin-timer-v1</string>
+	<string>habit-penguin-dev</string>
 	<key>STORAGE_BUCKET</key>
-	<string>penguin-timer-v1.firebasestorage.app</string>
+	<string>habit-penguin-dev.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:680896848616:ios:1225b4372f2a2534a21f5d</string>
+	<string>1:37294812499:ios:19ebbfc28df443a485c5a6</string>
 </dict>
 </plist>

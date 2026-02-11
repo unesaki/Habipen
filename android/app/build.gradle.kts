@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.penguin_timer"
+    namespace = "com.unetech.penguin_timer"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -24,13 +24,26 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.penguin_timer"
+        applicationId = "com.unetech.penguin_timer"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+    }
+
+    flavorDimensions += "default"
+    productFlavors {
+        create("dev") {
+            dimension = "default"
+            applicationIdSuffix = ".dev"
+            resValue("string", "app_name", "Penguin Dev")
+        }
+        create("prd") {
+            dimension = "default"
+            resValue("string", "app_name", "Habit Penguin")
+        }
     }
 
     buildTypes {

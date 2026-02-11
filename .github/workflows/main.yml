@@ -1,0 +1,48 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  test:
+    name: Flutter Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          
+      - name: Install dependencies
+        run: flutter pub get
+        
+      - name: Run tests
+        run: flutter test
+
+  deploy-functions:
+    name: Deploy Functions
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Functions Dependencies
+        working-directory: functions
+        run: npm ci
+
+      - name: Deploy to Firebase Functions
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only functions
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          # Or use Service Account:
+          # GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HABIT_PENGUIN_PRD }}

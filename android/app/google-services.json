@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "680896848616",
-    "project_id": "penguin-timer-v1",
-    "storage_bucket": "penguin-timer-v1.firebasestorage.app"
+    "project_number": "37294812499",
+    "project_id": "habit-penguin-dev",
+    "storage_bucket": "habit-penguin-dev.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:680896848616:android:8697648fa320f2a7a21f5d",
+        "mobilesdk_app_id": "1:37294812499:android:e7b77ed9aa935e1b85c5a6",
         "android_client_info": {
           "package_name": "com.example.penguin_timer"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDEmE3e0EeBrY2sGolvYB8Zrkmyed1fbp4"
+          "current_key": "AIzaSyD6SOtUlUG4_ZcdiuEdWlxH-Kau-UBcpdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37294812499:android:c90bdd6ac2c1cb2c85c5a6",
+        "android_client_info": {
+          "package_name": "com.unetech.penguin_timer.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6SOtUlUG4_ZcdiuEdWlxH-Kau-UBcpdE"
         }
       ],
       "services": {
