@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "680896848616",
+    "project_id": "penguin-timer-v1",
+    "storage_bucket": "penguin-timer-v1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680896848616:android:8697648fa320f2a7a21f5d",
+        "android_client_info": {
+          "package_name": "com.example.penguin_timer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEmE3e0EeBrY2sGolvYB8Zrkmyed1fbp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
